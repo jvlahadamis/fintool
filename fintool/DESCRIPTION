@@ -1,11 +1,21 @@
 Package: fintool
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 1.1.1
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: This Package Contains Useful Finance Functions
+Version: 1.0.0
+Authors@R: c( 
+    person("Jonathan", "Vlahadamis",,  "vlahadam@ualberta.ca", role = c("aut", "cre")),
+    person("Brooklyn", "Holt",, "baholt1@ualberta.ca", role = c("aut")),
+    person("Luke", "Talman",, "talman@ualberta.ca", role = c("aut")))
+Description: This package consists of financial tools geared towards facilitting the creation of financial model.
+License: MIT + file LICENSE
 Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.0
+Date: 2024-01-19
+Imports: 
+    ggplot2,
+    magrittr,
+    scales,
+    tidyr
+Depends: 
+    R (>= 2.10)
 LazyData: true
