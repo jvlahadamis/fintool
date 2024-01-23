@@ -12,10 +12,16 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.0
 Date: 2024-01-19
 Imports: 
+    dplyr,
     ggplot2,
     magrittr,
+    purrr,
+    quantmod,
     scales,
-    tidyr
+    tidyquant,
+    tidyr,
+    timetk,
+    tools
 Depends: 
     R (>= 2.10)
 LazyData: true

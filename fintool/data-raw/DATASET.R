@@ -21,3 +21,5 @@ stocks <- tidyquant::tq_get(c("TSLA", "AAPL"),
 
 usethis::use_data(stocks, overwrite = T)
 
+
+
