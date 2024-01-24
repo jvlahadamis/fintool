@@ -2,6 +2,8 @@
 
 export("%>%")
 export(ezohlc)
+export(getAgPrice)
+export(getAgPrices)
 export(wide2gg)
 import(dplyr)
 import(ggplot2)
