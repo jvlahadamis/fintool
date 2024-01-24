@@ -1,7 +1,7 @@
 #' Return a dataframe with adjusted OHLC for given tickers
 #'
-#' This function takes 3 inputs: a ticker or list of tickers, a start date and an end date and returns the adjusted OHLC
-#' table.
+#' This function takes 3 inputs:    a ticker/subset of tickers, start date, and end date. The
+#' output is the adjusted OHLC dataframe.
 #'
 #'
 #' @param tickers A ticker in quotes: "AAPL", or subset of tickers: c("AAPL", "TSLA") for example
@@ -10,7 +10,7 @@
 #' @return An table with adjusted OHLC prices
 #'
 #' @examples
-#' adjustohlc("AAPL", "2020-01-01", "2023-02-01")
+#' ezohlc("AAPL", "2020-01-01", "2023-02-01")
 #'
 #' @import dplyr
 #' @import tidyr
@@ -20,7 +20,7 @@
 #' @import timetk
 #' @import quantmod
 #' @export
-adjustohlc <- function(tickers, start, end) {
+ezohlc <- function(tickers, start, end) {
 
 
   Symbol <- data <- mutated_data <- Date <- NULL
@@ -46,7 +46,6 @@ adjustohlc <- function(tickers, start, end) {
 
   return(all)
 }
-
 
 
 
