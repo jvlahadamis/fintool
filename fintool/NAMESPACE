@@ -2,9 +2,9 @@
 
 export("%>%")
 export(ezohlc)
-export(rollReg)
 export(getAgPrice)
 export(getAgPrices)
+export(rollReg)
 export(wide2gg)
 import(dplyr)
 import(ggplot2)
