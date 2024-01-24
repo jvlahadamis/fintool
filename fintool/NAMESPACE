@@ -2,6 +2,7 @@
 
 export("%>%")
 export(ezohlc)
+export(rollReg)
 export(wide2gg)
 import(dplyr)
 import(ggplot2)
@@ -12,3 +13,5 @@ import(tidyr)
 import(timetk)
 import(tools)
 importFrom(magrittr,"%>%")
+importFrom(stats,as.formula)
+importFrom(stats,lm)
