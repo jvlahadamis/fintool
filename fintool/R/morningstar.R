@@ -55,11 +55,11 @@ getAgPrice <- function(feed = "MGEX_Futures_continuous",
   if (feed %in% c("MGEX_Futures_continuous",
                   "ICE_Canada_FuturesPrices_continuous"
   )) {
-    URL <- httr::modify_url(url = "https;//mp.morningstarcommodity.com", path = paste0("/lds/feeds/", feed, "/ts?", "contract=", contract, "&fromDateTime=", from))
+    URL <- httr::modify_url(url = "https://mp.morningstarcommodity.com", path = paste0("/lds/feeds/", feed, "/ts?", "contract=", contract, "&fromDateTime=", from))
   }
 
   httr::handle_reset(URL)
-  x <-  httr::GET(url = URL, httr::authenticate(user = iuser, password = ipassword, type = "basic"))
+  x <- httr::GET(url = URL, httr::authenticate(user = iuser, password = ipassword, type = "basic"))
   x <- httr::content(x)
 
   if (length(x) > 0) {
