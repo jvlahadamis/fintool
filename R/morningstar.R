@@ -47,6 +47,9 @@ getAgPrice <- function(feed = "MGEX_Futures_continuous",
                        from = "2000-01-01",
                        iuser = "a@abc.com",
                        ipassword = "password") {
+
+  . <- opt <- value <- NULL
+
   mpurl <- "https://mp.morningstarcommodity.com/lds/feeds/MGEX_Futures_continuous/ts?Symbol=MWE_001_Month"
   userpw <- paste0(iuser,":",ipassword)
   if (feed %in% c("MGEX_Futures")) {
