@@ -1,31 +1,19 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
 
 # fintool
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of fintool is to create a more efficient workflow for trading and fintech
-functions. 
+The goal of fintool is to create a more efficient workflow for trading
+and fintech functions.
 
 ## Installation
 
 You can install the development version of fintool like so:
 
-```{r eval=FALSE}
+``` r
 #install.packages("devtools")
 devtools::install_github("jvlahadamis/fintool")
 ```
@@ -34,9 +22,8 @@ devtools::install_github("jvlahadamis/fintool")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example, eval=FALSE}
+``` r
 library(fintool)
 
 rollReg(mtcars, 5, "hp", "mpg")
 ```
-
